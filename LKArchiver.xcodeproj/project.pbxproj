@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC015136188E734D0059E690 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC015135188E734D0059E690 /* Foundation.framework */; };
+		BC015138188E734D0059E690 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC015137188E734D0059E690 /* CoreGraphics.framework */; };
+		BC01513A188E734D0059E690 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC015139188E734D0059E690 /* UIKit.framework */; };
+		BC015140188E734D0059E690 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC01513E188E734D0059E690 /* InfoPlist.strings */; };
+		BC015142188E734D0059E690 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC015141188E734D0059E690 /* main.m */; };
+		BC015146188E734D0059E690 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC015145188E734D0059E690 /* AppDelegate.m */; };
+		BC015148188E734D0059E690 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC015147188E734D0059E690 /* Images.xcassets */; };
+		BC01514F188E734D0059E690 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC01514E188E734D0059E690 /* XCTest.framework */; };
+		BC015150188E734D0059E690 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC015135188E734D0059E690 /* Foundation.framework */; };
+		BC015151188E734D0059E690 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC015139188E734D0059E690 /* UIKit.framework */; };
+		BC015159188E734D0059E690 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC015157188E734D0059E690 /* InfoPlist.strings */; };
+		BC01515B188E734D0059E690 /* LKArchiverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC01515A188E734D0059E690 /* LKArchiverTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC015152188E734D0059E690 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC01512A188E734D0059E690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC015131188E734D0059E690;
+			remoteInfo = LKArchiver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC015132188E734D0059E690 /* LKArchiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKArchiver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC015135188E734D0059E690 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BC015137188E734D0059E690 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BC015139188E734D0059E690 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BC01513D188E734D0059E690 /* LKArchiver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LKArchiver-Info.plist"; sourceTree = "<group>"; };
+		BC01513F188E734D0059E690 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BC015141188E734D0059E690 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC015143188E734D0059E690 /* LKArchiver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LKArchiver-Prefix.pch"; sourceTree = "<group>"; };
+		BC015144188E734D0059E690 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC015145188E734D0059E690 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC015147188E734D0059E690 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BC01514D188E734D0059E690 /* LKArchiverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKArchiverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC01514E188E734D0059E690 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BC015156188E734D0059E690 /* LKArchiverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LKArchiverTests-Info.plist"; sourceTree = "<group>"; };
+		BC015158188E734D0059E690 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BC01515A188E734D0059E690 /* LKArchiverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKArchiverTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC01512F188E734D0059E690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC015138188E734D0059E690 /* CoreGraphics.framework in Frameworks */,
+				BC01513A188E734D0059E690 /* UIKit.framework in Frameworks */,
+				BC015136188E734D0059E690 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC01514A188E734D0059E690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC01514F188E734D0059E690 /* XCTest.framework in Frameworks */,
+				BC015151188E734D0059E690 /* UIKit.framework in Frameworks */,
+				BC015150188E734D0059E690 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC015129188E734D0059E690 = {
+			isa = PBXGroup;
+			children = (
+				BC01513B188E734D0059E690 /* LKArchiver */,
+				BC015154188E734D0059E690 /* LKArchiverTests */,
+				BC015134188E734D0059E690 /* Frameworks */,
+				BC015133188E734D0059E690 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC015133188E734D0059E690 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC015132188E734D0059E690 /* LKArchiver.app */,
+				BC01514D188E734D0059E690 /* LKArchiverTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC015134188E734D0059E690 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC015135188E734D0059E690 /* Foundation.framework */,
+				BC015137188E734D0059E690 /* CoreGraphics.framework */,
+				BC015139188E734D0059E690 /* UIKit.framework */,
+				BC01514E188E734D0059E690 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC01513B188E734D0059E690 /* LKArchiver */ = {
+			isa = PBXGroup;
+			children = (
+				BC015144188E734D0059E690 /* AppDelegate.h */,
+				BC015145188E734D0059E690 /* AppDelegate.m */,
+				BC015147188E734D0059E690 /* Images.xcassets */,
+				BC01513C188E734D0059E690 /* Supporting Files */,
+			);
+			path = LKArchiver;
+			sourceTree = "<group>";
+		};
+		BC01513C188E734D0059E690 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC01513D188E734D0059E690 /* LKArchiver-Info.plist */,
+				BC01513E188E734D0059E690 /* InfoPlist.strings */,
+				BC015141188E734D0059E690 /* main.m */,
+				BC015143188E734D0059E690 /* LKArchiver-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC015154188E734D0059E690 /* LKArchiverTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC01515A188E734D0059E690 /* LKArchiverTests.m */,
+				BC015155188E734D0059E690 /* Supporting Files */,
+			);
+			path = LKArchiverTests;
+			sourceTree = "<group>";
+		};
+		BC015155188E734D0059E690 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC015156188E734D0059E690 /* LKArchiverTests-Info.plist */,
+				BC015157188E734D0059E690 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC015131188E734D0059E690 /* LKArchiver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC01515E188E734D0059E690 /* Build configuration list for PBXNativeTarget "LKArchiver" */;
+			buildPhases = (
+				BC01512E188E734D0059E690 /* Sources */,
+				BC01512F188E734D0059E690 /* Frameworks */,
+				BC015130188E734D0059E690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LKArchiver;
+			productName = LKArchiver;
+			productReference = BC015132188E734D0059E690 /* LKArchiver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC01514C188E734D0059E690 /* LKArchiverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC015161188E734D0059E690 /* Build configuration list for PBXNativeTarget "LKArchiverTests" */;
+			buildPhases = (
+				BC015149188E734D0059E690 /* Sources */,
+				BC01514A188E734D0059E690 /* Frameworks */,
+				BC01514B188E734D0059E690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC015153188E734D0059E690 /* PBXTargetDependency */,
+			);
+			name = LKArchiverTests;
+			productName = LKArchiverTests;
+			productReference = BC01514D188E734D0059E690 /* LKArchiverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC01512A188E734D0059E690 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = lakesoft;
+				TargetAttributes = {
+					BC01514C188E734D0059E690 = {
+						TestTargetID = BC015131188E734D0059E690;
+					};
+				};
+			};
+			buildConfigurationList = BC01512D188E734D0059E690 /* Build configuration list for PBXProject "LKArchiver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BC015129188E734D0059E690;
+			productRefGroup = BC015133188E734D0059E690 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC015131188E734D0059E690 /* LKArchiver */,
+				BC01514C188E734D0059E690 /* LKArchiverTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC015130188E734D0059E690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC015140188E734D0059E690 /* InfoPlist.strings in Resources */,
+				BC015148188E734D0059E690 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC01514B188E734D0059E690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC015159188E734D0059E690 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC01512E188E734D0059E690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC015146188E734D0059E690 /* AppDelegate.m in Sources */,
+				BC015142188E734D0059E690 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC015149188E734D0059E690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC01515B188E734D0059E690 /* LKArchiverTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC015153188E734D0059E690 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC015131188E734D0059E690 /* LKArchiver */;
+			targetProxy = BC015152188E734D0059E690 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC01513E188E734D0059E690 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC01513F188E734D0059E690 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BC015157188E734D0059E690 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC015158188E734D0059E690 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC01515C188E734D0059E690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BC01515D188E734D0059E690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC01515F188E734D0059E690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LKArchiver/LKArchiver-Prefix.pch";
+				INFOPLIST_FILE = "LKArchiver/LKArchiver-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BC015160188E734D0059E690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LKArchiver/LKArchiver-Prefix.pch";
+				INFOPLIST_FILE = "LKArchiver/LKArchiver-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BC015162188E734D0059E690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LKArchiver.app/LKArchiver";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LKArchiver/LKArchiver-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LKArchiverTests/LKArchiverTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BC015163188E734D0059E690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LKArchiver.app/LKArchiver";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LKArchiver/LKArchiver-Prefix.pch";
+				INFOPLIST_FILE = "LKArchiverTests/LKArchiverTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC01512D188E734D0059E690 /* Build configuration list for PBXProject "LKArchiver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01515C188E734D0059E690 /* Debug */,
+				BC01515D188E734D0059E690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC01515E188E734D0059E690 /* Build configuration list for PBXNativeTarget "LKArchiver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01515F188E734D0059E690 /* Debug */,
+				BC015160188E734D0059E690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BC015161188E734D0059E690 /* Build configuration list for PBXNativeTarget "LKArchiverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC015162188E734D0059E690 /* Debug */,
+				BC015163188E734D0059E690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC01512A188E734D0059E690 /* Project object */;
+}
