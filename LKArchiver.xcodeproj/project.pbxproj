@@ -19,6 +19,16 @@
 		BC015151188E734D0059E690 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC015139188E734D0059E690 /* UIKit.framework */; };
 		BC015159188E734D0059E690 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC015157188E734D0059E690 /* InfoPlist.strings */; };
 		BC01515B188E734D0059E690 /* LKArchiverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC01515A188E734D0059E690 /* LKArchiverTests.m */; };
+		BC01516A188E74970059E690 /* LKArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BC015169188E74970059E690 /* LKArchiver.m */; };
+		BC01516B188E74970059E690 /* LKArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BC015169188E74970059E690 /* LKArchiver.m */; };
+		BC01516E188E98DA0059E690 /* LKCacheDirectoryArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BC01516D188E98DA0059E690 /* LKCacheDirectoryArchiver.m */; };
+		BC01516F188E98DA0059E690 /* LKCacheDirectoryArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BC01516D188E98DA0059E690 /* LKCacheDirectoryArchiver.m */; };
+		BC015172188E98EA0059E690 /* LKDocumentDirectoryArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BC015171188E98EA0059E690 /* LKDocumentDirectoryArchiver.m */; };
+		BC015173188E98EA0059E690 /* LKDocumentDirectoryArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BC015171188E98EA0059E690 /* LKDocumentDirectoryArchiver.m */; };
+		BC015176188E9DCD0059E690 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BC015175188E9DCD0059E690 /* TestObject.m */; };
+		BC015177188E9DCD0059E690 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BC015175188E9DCD0059E690 /* TestObject.m */; };
+		BCA72C7C188FEF05001FD787 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA72C7B188FEF05001FD787 /* User.m */; };
+		BCA72C7F188FEF30001FD787 /* UserHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA72C7E188FEF30001FD787 /* UserHistory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +58,20 @@
 		BC015156188E734D0059E690 /* LKArchiverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LKArchiverTests-Info.plist"; sourceTree = "<group>"; };
 		BC015158188E734D0059E690 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC01515A188E734D0059E690 /* LKArchiverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKArchiverTests.m; sourceTree = "<group>"; };
+		BC015168188E74970059E690 /* LKArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKArchiver.h; sourceTree = "<group>"; };
+		BC015169188E74970059E690 /* LKArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKArchiver.m; sourceTree = "<group>"; };
+		BC01516C188E98DA0059E690 /* LKCacheDirectoryArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCacheDirectoryArchiver.h; sourceTree = "<group>"; };
+		BC01516D188E98DA0059E690 /* LKCacheDirectoryArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCacheDirectoryArchiver.m; sourceTree = "<group>"; };
+		BC015170188E98EA0059E690 /* LKDocumentDirectoryArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDocumentDirectoryArchiver.h; sourceTree = "<group>"; };
+		BC015171188E98EA0059E690 /* LKDocumentDirectoryArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDocumentDirectoryArchiver.m; sourceTree = "<group>"; };
+		BC015174188E9DCD0059E690 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		BC015175188E9DCD0059E690 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		BCA72C7A188FEF05001FD787 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		BCA72C7B188FEF05001FD787 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		BCA72C7D188FEF30001FD787 /* UserHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHistory.h; sourceTree = "<group>"; };
+		BCA72C7E188FEF30001FD787 /* UserHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHistory.m; sourceTree = "<group>"; };
+		BCA72C831890820F001FD787 /* LKArchiver.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = LKArchiver.podspec; sourceTree = "<group>"; };
+		BCA72C8418908244001FD787 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +101,11 @@
 		BC015129188E734D0059E690 = {
 			isa = PBXGroup;
 			children = (
-				BC01513B188E734D0059E690 /* LKArchiver */,
-				BC015154188E734D0059E690 /* LKArchiverTests */,
+				BCA72C8418908244001FD787 /* LICENSE */,
+				BCA72C82189081F1001FD787 /* CocoaPods */,
+				BC015164188E740D0059E690 /* Classes */,
+				BC01513B188E734D0059E690 /* Examples */,
+				BC015154188E734D0059E690 /* Tests */,
 				BC015134188E734D0059E690 /* Frameworks */,
 				BC015133188E734D0059E690 /* Products */,
 			);
@@ -104,15 +131,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BC01513B188E734D0059E690 /* LKArchiver */ = {
+		BC01513B188E734D0059E690 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
 				BC015144188E734D0059E690 /* AppDelegate.h */,
 				BC015145188E734D0059E690 /* AppDelegate.m */,
+				BCA72C7A188FEF05001FD787 /* User.h */,
+				BCA72C7B188FEF05001FD787 /* User.m */,
+				BCA72C7D188FEF30001FD787 /* UserHistory.h */,
+				BCA72C7E188FEF30001FD787 /* UserHistory.m */,
 				BC015147188E734D0059E690 /* Images.xcassets */,
 				BC01513C188E734D0059E690 /* Supporting Files */,
 			);
-			path = LKArchiver;
+			path = Examples;
 			sourceTree = "<group>";
 		};
 		BC01513C188E734D0059E690 /* Supporting Files */ = {
@@ -126,13 +157,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BC015154188E734D0059E690 /* LKArchiverTests */ = {
+		BC015154188E734D0059E690 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				BC01515A188E734D0059E690 /* LKArchiverTests.m */,
+				BC015174188E9DCD0059E690 /* TestObject.h */,
+				BC015175188E9DCD0059E690 /* TestObject.m */,
 				BC015155188E734D0059E690 /* Supporting Files */,
 			);
-			path = LKArchiverTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		BC015155188E734D0059E690 /* Supporting Files */ = {
@@ -142,6 +175,27 @@
 				BC015157188E734D0059E690 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC015164188E740D0059E690 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BC015168188E74970059E690 /* LKArchiver.h */,
+				BC015169188E74970059E690 /* LKArchiver.m */,
+				BC01516C188E98DA0059E690 /* LKCacheDirectoryArchiver.h */,
+				BC01516D188E98DA0059E690 /* LKCacheDirectoryArchiver.m */,
+				BC015170188E98EA0059E690 /* LKDocumentDirectoryArchiver.h */,
+				BC015171188E98EA0059E690 /* LKDocumentDirectoryArchiver.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BCA72C82189081F1001FD787 /* CocoaPods */ = {
+			isa = PBXGroup;
+			children = (
+				BCA72C831890820F001FD787 /* LKArchiver.podspec */,
+			);
+			name = CocoaPods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +294,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC015146188E734D0059E690 /* AppDelegate.m in Sources */,
+				BCA72C7F188FEF30001FD787 /* UserHistory.m in Sources */,
+				BCA72C7C188FEF05001FD787 /* User.m in Sources */,
+				BC015172188E98EA0059E690 /* LKDocumentDirectoryArchiver.m in Sources */,
+				BC01516E188E98DA0059E690 /* LKCacheDirectoryArchiver.m in Sources */,
+				BC01516A188E74970059E690 /* LKArchiver.m in Sources */,
+				BC015176188E9DCD0059E690 /* TestObject.m in Sources */,
 				BC015142188E734D0059E690 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,7 +308,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC01516B188E74970059E690 /* LKArchiver.m in Sources */,
+				BC01516F188E98DA0059E690 /* LKCacheDirectoryArchiver.m in Sources */,
+				BC015177188E9DCD0059E690 /* TestObject.m in Sources */,
 				BC01515B188E734D0059E690 /* LKArchiverTests.m in Sources */,
+				BC015173188E98EA0059E690 /* LKDocumentDirectoryArchiver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,8 +424,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LKArchiver/LKArchiver-Prefix.pch";
-				INFOPLIST_FILE = "LKArchiver/LKArchiver-Info.plist";
+				GCC_PREFIX_HEADER = "Examples/LKArchiver-Prefix.pch";
+				INFOPLIST_FILE = "Examples/LKArchiver-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -373,8 +437,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LKArchiver/LKArchiver-Prefix.pch";
-				INFOPLIST_FILE = "LKArchiver/LKArchiver-Info.plist";
+				GCC_PREFIX_HEADER = "Examples/LKArchiver-Prefix.pch";
+				INFOPLIST_FILE = "Examples/LKArchiver-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -391,12 +455,12 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LKArchiver/LKArchiver-Prefix.pch";
+				GCC_PREFIX_HEADER = "Examples/LKArchiver-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "LKArchiverTests/LKArchiverTests-Info.plist";
+				INFOPLIST_FILE = "Tests/LKArchiverTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -414,8 +478,8 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LKArchiver/LKArchiver-Prefix.pch";
-				INFOPLIST_FILE = "LKArchiverTests/LKArchiverTests-Info.plist";
+				GCC_PREFIX_HEADER = "Examples/LKArchiver-Prefix.pch";
+				INFOPLIST_FILE = "Tests/LKArchiverTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -441,6 +505,7 @@
 				BC015160188E734D0059E690 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC015161188E734D0059E690 /* Build configuration list for PBXNativeTarget "LKArchiverTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +514,7 @@
 				BC015163188E734D0059E690 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

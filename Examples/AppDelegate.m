@@ -7,15 +7,23 @@
 //
 
 #import "AppDelegate.h"
+#import "UserHistory.h"
+#import "User.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    NSLog(@"Previous UserHistory:\n%@", UserHistory.sharedHistory);
+    
+    User* user = User.new;
+    user.name = [NSString stringWithFormat:@"NAME-%@", NSDate.date];
+    user.mail = [NSString stringWithFormat:@"MAIL-%@", NSDate.date];
+    [UserHistory.sharedHistory addUser:user];
+    [UserHistory.sharedHistory save];
+
+    NSLog(@"Current UserHistory:\n%@", UserHistory.sharedHistory);
+    
     return YES;
 }
 
