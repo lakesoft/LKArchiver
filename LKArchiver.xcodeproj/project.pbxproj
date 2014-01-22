@@ -21,8 +21,8 @@
 		BC01515B188E734D0059E690 /* LKArchiverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC01515A188E734D0059E690 /* LKArchiverTests.m */; };
 		BC01516A188E74970059E690 /* LKArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BC015169188E74970059E690 /* LKArchiver.m */; };
 		BC01516B188E74970059E690 /* LKArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BC015169188E74970059E690 /* LKArchiver.m */; };
-		BC01516E188E98DA0059E690 /* LKCacheDirectoryArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BC01516D188E98DA0059E690 /* LKCacheDirectoryArchiver.m */; };
-		BC01516F188E98DA0059E690 /* LKCacheDirectoryArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BC01516D188E98DA0059E690 /* LKCacheDirectoryArchiver.m */; };
+		BC01516E188E98DA0059E690 /* LKCachesDirectoryArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BC01516D188E98DA0059E690 /* LKCachesDirectoryArchiver.m */; };
+		BC01516F188E98DA0059E690 /* LKCachesDirectoryArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BC01516D188E98DA0059E690 /* LKCachesDirectoryArchiver.m */; };
 		BC015172188E98EA0059E690 /* LKDocumentDirectoryArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BC015171188E98EA0059E690 /* LKDocumentDirectoryArchiver.m */; };
 		BC015173188E98EA0059E690 /* LKDocumentDirectoryArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BC015171188E98EA0059E690 /* LKDocumentDirectoryArchiver.m */; };
 		BC015176188E9DCD0059E690 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BC015175188E9DCD0059E690 /* TestObject.m */; };
@@ -60,8 +60,8 @@
 		BC01515A188E734D0059E690 /* LKArchiverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKArchiverTests.m; sourceTree = "<group>"; };
 		BC015168188E74970059E690 /* LKArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKArchiver.h; sourceTree = "<group>"; };
 		BC015169188E74970059E690 /* LKArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKArchiver.m; sourceTree = "<group>"; };
-		BC01516C188E98DA0059E690 /* LKCacheDirectoryArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCacheDirectoryArchiver.h; sourceTree = "<group>"; };
-		BC01516D188E98DA0059E690 /* LKCacheDirectoryArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCacheDirectoryArchiver.m; sourceTree = "<group>"; };
+		BC01516C188E98DA0059E690 /* LKCachesDirectoryArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCachesDirectoryArchiver.h; sourceTree = "<group>"; };
+		BC01516D188E98DA0059E690 /* LKCachesDirectoryArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCachesDirectoryArchiver.m; sourceTree = "<group>"; };
 		BC015170188E98EA0059E690 /* LKDocumentDirectoryArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDocumentDirectoryArchiver.h; sourceTree = "<group>"; };
 		BC015171188E98EA0059E690 /* LKDocumentDirectoryArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDocumentDirectoryArchiver.m; sourceTree = "<group>"; };
 		BC015174188E9DCD0059E690 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
@@ -182,8 +182,8 @@
 			children = (
 				BC015168188E74970059E690 /* LKArchiver.h */,
 				BC015169188E74970059E690 /* LKArchiver.m */,
-				BC01516C188E98DA0059E690 /* LKCacheDirectoryArchiver.h */,
-				BC01516D188E98DA0059E690 /* LKCacheDirectoryArchiver.m */,
+				BC01516C188E98DA0059E690 /* LKCachesDirectoryArchiver.h */,
+				BC01516D188E98DA0059E690 /* LKCachesDirectoryArchiver.m */,
 				BC015170188E98EA0059E690 /* LKDocumentDirectoryArchiver.h */,
 				BC015171188E98EA0059E690 /* LKDocumentDirectoryArchiver.m */,
 			);
@@ -297,7 +297,7 @@
 				BCA72C7F188FEF30001FD787 /* UserHistory.m in Sources */,
 				BCA72C7C188FEF05001FD787 /* User.m in Sources */,
 				BC015172188E98EA0059E690 /* LKDocumentDirectoryArchiver.m in Sources */,
-				BC01516E188E98DA0059E690 /* LKCacheDirectoryArchiver.m in Sources */,
+				BC01516E188E98DA0059E690 /* LKCachesDirectoryArchiver.m in Sources */,
 				BC01516A188E74970059E690 /* LKArchiver.m in Sources */,
 				BC015176188E9DCD0059E690 /* TestObject.m in Sources */,
 				BC015142188E734D0059E690 /* main.m in Sources */,
@@ -309,7 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC01516B188E74970059E690 /* LKArchiver.m in Sources */,
-				BC01516F188E98DA0059E690 /* LKCacheDirectoryArchiver.m in Sources */,
+				BC01516F188E98DA0059E690 /* LKCachesDirectoryArchiver.m in Sources */,
 				BC015177188E9DCD0059E690 /* TestObject.m in Sources */,
 				BC01515B188E734D0059E690 /* LKArchiverTests.m in Sources */,
 				BC015173188E98EA0059E690 /* LKDocumentDirectoryArchiver.m in Sources */,

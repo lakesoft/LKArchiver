@@ -6,11 +6,11 @@
 //  Copyright (c) 2014年 lakesoft. All rights reserved.
 //
 
-#import "LKCacheDirectoryArchiver.h"
+#import "LKCachesDirectoryArchiver.h"
 
-@implementation LKCacheDirectoryArchiver
+@implementation LKCachesDirectoryArchiver
 
-- (NSString*)path
++ (NSString*)path
 {
     return NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0];
 }

@@ -11,52 +11,30 @@
 @implementation LKArchiver
 
 #pragma mark - Privates
-- (NSString*)_filePathForKey:(NSString*)key
++ (NSString*)_filePathForKey:(NSString*)key
 {
     NSString* filename = [key stringByAppendingPathExtension:@"archive"];
     return [self.path stringByAppendingPathComponent:filename];
 }
 
 #pragma mark - API
-+ (instancetype)sharedArchiver
-{
-    static NSMutableDictionary* _archivers;
-    
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _archivers = @{}.mutableCopy;
-    });
-    
-    id archiver = nil;
-    
-    @synchronized (self) {
-        NSString* archiverKey = NSStringFromClass(self.class);
-        
-        archiver = _archivers[archiverKey];
-        if (archiver == nil) {
-            archiver = self.new;
-            _archivers[archiverKey] = archiver;
-        }
-    }
-    return archiver;
-}
 
-- (BOOL)archiveRootObject:(id <NSCoding>)rootObject forKey:(NSString*)key
++ (BOOL)archiveRootObject:(id <NSCoding>)rootObject forKey:(NSString*)key
 {
     return [NSKeyedArchiver archiveRootObject:rootObject
                                        toFile:[self _filePathForKey:key]];
 }
 
-- (id)unarchiveObjectForKey:(NSString*)key
++ (id)unarchiveObjectForKey:(NSString*)key
 {
     return [NSKeyedUnarchiver unarchiveObjectWithFile:[self _filePathForKey:key]];
 }
 
-- (BOOL)removeArchiveForKey:(NSString*)key
++ (BOOL)removeArchiveForKey:(NSString*)key
 {
     BOOL result = YES;
     NSString* filePath = [self _filePathForKey:key];
-    if ([NSFileManager.defaultManager fileExistsAtPath:filePath]) {
+    if ([self archiveExistsForKey:key]) {
         NSError* error = nil;
         result = [NSFileManager.defaultManager removeItemAtPath:filePath
                                                           error:&error];
@@ -67,8 +45,13 @@
     return result;
 }
 
++ (BOOL)archiveExistsForKey:(NSString*)key
+{
+    return [NSFileManager.defaultManager fileExistsAtPath:[self _filePathForKey:key]];
+}
+
 #pragma mark - Orverwritten
-- (NSString*)path
++ (NSString*)path
 {
     NSLog(@"%s: must be overwritten in subclass.", __PRETTY_FUNCTION__);
     return nil;

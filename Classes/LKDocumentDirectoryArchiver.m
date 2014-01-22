@@ -10,7 +10,7 @@
 
 @implementation LKDocumentDirectoryArchiver
 
-- (NSString*)path
++ (NSString*)path
 {
     return NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
 }

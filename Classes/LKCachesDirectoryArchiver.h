@@ -8,6 +8,6 @@
 
 #import "LKArchiver.h"
 
-@interface LKCacheDirectoryArchiver : LKArchiver
+@interface LKCachesDirectoryArchiver : LKArchiver
 
 @end

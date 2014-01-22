@@ -44,12 +44,12 @@
 
 - (void)save
 {
-    [LKDocumentDirectoryArchiver.sharedArchiver archiveRootObject:self.users forKey:ARCHIVE_KEY];
+    [LKDocumentDirectoryArchiver archiveRootObject:self.users forKey:ARCHIVE_KEY];
 }
 
 - (void)load
 {
-    self.users = [LKDocumentDirectoryArchiver.sharedArchiver unarchiveObjectForKey:ARCHIVE_KEY];
+    self.users = [LKDocumentDirectoryArchiver unarchiveObjectForKey:ARCHIVE_KEY];
     if (self.users == nil) {
         self.users = @[].mutableCopy;
     }

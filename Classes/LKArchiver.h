@@ -11,13 +11,13 @@
 @interface LKArchiver : NSObject
 
 #pragma mark - API
-+ (instancetype)sharedArchiver;
 
-- (BOOL)archiveRootObject:(id <NSCoding>)rootObject forKey:(NSString*)key;
-- (id)unarchiveObjectForKey:(NSString*)key;
-- (BOOL)removeArchiveForKey:(NSString*)key;
++ (BOOL)archiveRootObject:(id <NSCoding>)rootObject forKey:(NSString*)key;
++ (id)unarchiveObjectForKey:(NSString*)key;
++ (BOOL)removeArchiveForKey:(NSString*)key;
++ (BOOL)archiveExistsForKey:(NSString*)key;
 
 #pragma mark - Orverwritten
-- (NSString*)path;
++ (NSString*)path;
 
 @end

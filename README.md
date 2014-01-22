@@ -6,8 +6,8 @@ NSKeyedArchiver/NSKeyedUnArchiver wrapper
 
 ### Archiving
 
-    [LKDocumentDirectoryArchiver.sharedArchiver archiveRootObject:userList
-                                                           forKey:@"UserList"];
+    [LKDocumentDirectoryArchiver archiveRootObject:userList
+                                            forKey:@"UserList"];
 
 It executes like below functions.
 
@@ -16,7 +16,7 @@ It executes like below functions.
 
 ### Unarchiving
 
-    id userList = [LKDocumentDirectoryArchiver.sharedArchiver unarchiverObjectForKey:@"UserList"];
+    id userList = [LKDocumentDirectoryArchiver unarchiverObjectForKey:@"UserList"];
   
 It executes like below functions.
 
@@ -24,13 +24,15 @@ It executes like below functions.
 
 You can remove an archive file.
 
-    [LKDOcumentDirectoryArchiver.sharedArchiver removeArchiverForKey:@"UserList"];
+    [LKDOcumentDirectoryArchiver removeArchiverForKey:@"UserList"];
 
+Check to exist an archiver file.
 
-Available directories:
+	[LKDocumentDirectoryArchiver archiverExistsForKey:@"UserList"];
 
-    LKCacheDirectoryArchiver -> NSCachesDirectory
-    LKDocumentDirectoryArchiver -> NSDocumentDirectory
+NSCachesDirectory is available too:
+
+	[LKCachesDirecotryArchiver archiveRootObject:userList toFile:filename];
 
 
 ## Installation
