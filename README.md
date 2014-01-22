@@ -14,6 +14,14 @@ It executes like below functions.
     // filename is equal to (Application Directory)/Documents/UserList.archive
     [NSKeyedArchiver archiveRootObject:userList toFile:filename];
 
+If required default value case,
+
+	[LKDocumentDirectoryArchiver archiveRootObject:userList
+	                                        forKey:@"UserList"
+                                     defaultObject:^id{
+										 return @[].mutableCopy;
+									 }];
+
 ### Unarchiving
 
     id userList = [LKDocumentDirectoryArchiver unarchiverObjectForKey:@"UserList"];

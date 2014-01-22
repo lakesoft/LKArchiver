@@ -55,6 +55,7 @@
     XCTAssertNil(array2, @"");
 }
 
+
 - (void)testRemoveAndExists
 {
     [LKDocumentDirectoryArchiver removeArchiveForKey:@"TEST-21"];
@@ -82,6 +83,16 @@
 }
 
 
+- (void)testDefaultObject
+{
+    id object = [LKDocumentDirectoryArchiver unarchiveObjectForKey:@"TEST-31"
+                                                     defaultObject:^id{
+                                                         return @"NILCASE-31";
+                                                     }];
+    XCTAssertEqualObjects(object, @"NILCASE-31", @"");
+}
+
+
 - (void)testDirectory
 {
     NSString* documentPath1 = LKDocumentDirectoryArchiver.path;
@@ -92,5 +103,6 @@
     NSString* cachePath2 = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0];
     XCTAssertEqualObjects(cachePath1, cachePath2, @"");
 }
+
 
 @end

@@ -41,6 +41,15 @@
     return object;
 }
 
++ (id)unarchiveObjectForKey:(NSString*)key defaultObject:(id(^)())defaultObject
+{
+    id object = [self unarchiveObjectForKey:key];
+    if (object == nil) {
+        object = defaultObject();
+    }
+    return object;
+}
+
 + (BOOL)removeArchiveForKey:(NSString*)key
 {
     BOOL result = YES;

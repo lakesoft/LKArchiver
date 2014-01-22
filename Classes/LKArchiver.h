@@ -13,7 +13,10 @@
 #pragma mark - API
 
 + (BOOL)archiveRootObject:(id <NSCoding>)rootObject forKey:(NSString*)key;
+
 + (id)unarchiveObjectForKey:(NSString*)key;
++ (id)unarchiveObjectForKey:(NSString*)key defaultObject:(id(^)())defaultObject;
+
 + (BOOL)removeArchiveForKey:(NSString*)key;
 + (BOOL)archiveExistsForKey:(NSString*)key;
 
