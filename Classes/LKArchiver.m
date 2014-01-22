@@ -21,13 +21,24 @@
 
 + (BOOL)archiveRootObject:(id <NSCoding>)rootObject forKey:(NSString*)key
 {
-    return [NSKeyedArchiver archiveRootObject:rootObject
-                                       toFile:[self _filePathForKey:key]];
+    @try {
+        return [NSKeyedArchiver archiveRootObject:rootObject
+                                           toFile:[self _filePathForKey:key]];
+    } @catch (NSException* e) {
+        NSLog(@"%s: %@", __PRETTY_FUNCTION__, e);
+        return NO;
+    }
 }
 
 + (id)unarchiveObjectForKey:(NSString*)key
 {
-    return [NSKeyedUnarchiver unarchiveObjectWithFile:[self _filePathForKey:key]];
+    id object = nil;
+    @try {
+        object = [NSKeyedUnarchiver unarchiveObjectWithFile:[self _filePathForKey:key]];
+    } @catch (NSException* e) {
+        NSLog(@"%s: %@", __PRETTY_FUNCTION__, e);
+    }
+    return object;
 }
 
 + (BOOL)removeArchiveForKey:(NSString*)key
