@@ -22,7 +22,7 @@ It executes like below functions.
 
     id userList = [NSKeyedUnarchiver unarchiverObjectWithFile:filename];
 
-You can remove these files.
+You can remove an archive file.
 
     [LKDOcumentDirectoryArchiver.sharedArchiver removeArchiverForKey:@"UserList"];
 
