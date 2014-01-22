@@ -22,6 +22,9 @@ It executes like below functions.
 
     id userList = [NSKeyedUnarchiver unarchiverObjectWithFile:filename];
 
+
+### Etc
+
 You can remove an archive file.
 
     [LKDOcumentDirectoryArchiver removeArchiverForKey:@"UserList"];
