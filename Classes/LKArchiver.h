@@ -16,6 +16,7 @@
 
 + (id)unarchiveObjectForKey:(NSString*)key;
 + (id)unarchiveObjectForKey:(NSString*)key defaultObject:(id(^)())defaultObject;
++ (id)unarchiveObjectForKey:(NSString*)key failure:(void(^)())failure;
 
 + (BOOL)removeArchiveForKey:(NSString*)key;
 + (BOOL)archiveExistsForKey:(NSString*)key;

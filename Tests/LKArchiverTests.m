@@ -93,6 +93,19 @@
 }
 
 
+- (void)testFailure
+{
+    __block NSString* str = nil;
+
+    id object = [LKDocumentDirectoryArchiver unarchiveObjectForKey:@"TEST-41"
+                 failure:^{
+                     str = @"FAILURE";
+                 }];
+    XCTAssertNil(object, @"");
+    XCTAssertEqualObjects(str, @"FAILURE", @"");
+}
+
+
 - (void)testDirectory
 {
     NSString* documentPath1 = LKDocumentDirectoryArchiver.path;

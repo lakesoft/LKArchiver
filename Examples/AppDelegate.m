@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "UserHistory.h"
 #import "User.h"
+#import "LKDocumentDirectoryArchiver.h"
 
 @implementation AppDelegate
 
@@ -23,6 +24,11 @@
     [UserHistory.sharedHistory save];
 
     NSLog(@"Current UserHistory:\n%@", UserHistory.sharedHistory);
+
+    [LKDocumentDirectoryArchiver unarchiveObjectForKey:@"UNKOWN"
+                                               failure:^{
+                                                   NSLog(@"unkown at %@", self);
+                                               }];
     
     return YES;
 }

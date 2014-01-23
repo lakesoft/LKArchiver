@@ -50,6 +50,16 @@
     return object;
 }
 
++ (id)unarchiveObjectForKey:(NSString*)key failure:(void(^)())failure
+{
+    id object = [self unarchiveObjectForKey:key];
+    if (object == nil) {
+        failure();
+    }
+    return object;
+}
+
+
 + (BOOL)removeArchiveForKey:(NSString*)key
 {
     BOOL result = YES;

@@ -31,6 +31,14 @@ If required default value case,
     								   return @[].mutableCopy;
   								    }];
 
+Supports handling failure,
+
+	[LKDocumentDirectoryArchiver unarchiveObject:userList
+	                                      forKey:@"UserList"
+                                         failure:^{
+    								        // do something
+  								         }];
+
 ### Etc
 
 You can remove an archive file.
