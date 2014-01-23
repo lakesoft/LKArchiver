@@ -25,11 +25,11 @@ It executes like below functions.
 
 If required default value case,
 
-	[LKDocumentDirectoryArchiver unarchiveRootObject:userList
-	                                          forKey:@"UserList"
-                                       defaultObject:^id{
-    										 return @[].mutableCopy;
-  									   }];
+	[LKDocumentDirectoryArchiver unarchiveObject:userList
+	                                      forKey:@"UserList"
+                                    defaultObject:^id{
+    								   return @[].mutableCopy;
+  								    }];
 
 ### Etc
 
