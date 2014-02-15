@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LKArchiver"
-  s.version      = "1.3.0"
+  s.version      = "1.3.1"
   s.summary      = "NSKeyedArchiver/NSKeyedUnArchiver wrapper"
   s.description  = <<-DESC
 NSKeyedArchiver/NSKeyedUnArchiver wrapper.

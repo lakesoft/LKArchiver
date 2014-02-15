@@ -21,7 +21,6 @@
 {
     if ([key rangeOfString:@"/"].length > 0) {
         NSString* dir = [[self _filePathForKey:key] stringByDeletingLastPathComponent];
-        NSLog(@"%@", dir);
         if (![NSFileManager.defaultManager fileExistsAtPath:dir]) {
             NSError* error = nil;
             [NSFileManager.defaultManager createDirectoryAtPath:dir
