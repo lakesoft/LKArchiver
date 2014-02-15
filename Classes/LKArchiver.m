@@ -17,11 +17,34 @@
     return [self.path stringByAppendingPathComponent:filename];
 }
 
++ (void)_createDirectoryForKey:(NSString*)key
+{
+    if ([key rangeOfString:@"/"].length > 0) {
+        NSString* dir = [[self _filePathForKey:key] stringByDeletingLastPathComponent];
+        NSLog(@"%@", dir);
+        if (![NSFileManager.defaultManager fileExistsAtPath:dir]) {
+            NSError* error = nil;
+            [NSFileManager.defaultManager createDirectoryAtPath:dir
+                                    withIntermediateDirectories:YES
+                                                     attributes:nil
+                                                          error:&error];
+            if (error) {
+                NSLog(@"%s: %@", __PRETTY_FUNCTION__, error);
+            }
+        }
+    }
+}
+
 #pragma mark - API
 
 + (BOOL)archiveRootObject:(id <NSCoding>)rootObject forKey:(NSString*)key
 {
+    key = [key stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"/"]];
+    if (key.length == 0) {
+        return NO;
+    }
     @try {
+        [self _createDirectoryForKey:key];
         return [NSKeyedArchiver archiveRootObject:rootObject
                                            toFile:[self _filePathForKey:key]];
     } @catch (NSException* e) {

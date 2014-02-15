@@ -39,6 +39,17 @@ Supports handling failure,
     								        // do something
   								         }];
 
+### Using directroy
+
+You can use directory. 
+
+    [LKDocumentDirectoryArchiver archiveRootObject:userList1
+                                            forKey:@"Support/01/UserList"];
+	// placed as bellow:
+	// (Application Directory)/Documents/Support/01/UserList.archive
+
+The first "/" character will be removed. (e.g.) "/Sales/obj" => "Sales/obj"
+
 ### Etc
 
 You can remove an archive file.

@@ -55,7 +55,6 @@
     XCTAssertNil(array2, @"");
 }
 
-
 - (void)testRemoveAndExists
 {
     [LKDocumentDirectoryArchiver removeArchiveForKey:@"TEST-21"];
@@ -117,5 +116,75 @@
     XCTAssertEqualObjects(cachePath1, cachePath2, @"");
 }
 
+
+- (void)testArchiveOnLayers
+{
+    NSMutableDictionary* list = @{}.mutableCopy;
+    NSArray* keys = @[
+                      @"dirA10/fileA11"           , @"dirA10/fileA12",
+                      @"dirA10/dir20/file21"      , @"dirA10/dir20/file22",
+                      @"dirA10/dir20/dir30/file31", @"dirA10/dir20/dir30/file32",
+                      @"dirA10/dir20/dir31/file31", @"dirA10/dir20/dir31/file32",
+                      @"dirB10/fileA11"           , @"dirB10/fileA12",
+                      @"dirB10/dir20/file21"      , @"dirB10/dir20/file22",
+                      @"dirB10/dir20/dir30/file31", @"dirB10/dir20/dir30/file32",
+                      @"dirB10/dir20/dir31/file31", @"dirB10/dir20/dir31/file32",
+                      ];
+    for (NSString* key in keys) {
+        NSMutableArray* objs = @[].mutableCopy;
+        for (int i=0; i < 10; i++) {
+            TestObject* obj = TestObject.new;
+            obj.name = [NSString stringWithFormat:@"NAME-%@-%d", key, i];
+            obj.mail = [NSString stringWithFormat:@"MAIL-%@-%d", key, i];
+            [objs addObject:obj];
+        }
+        list[key] = objs;
+    }
+
+    for (NSString* key in keys) {
+        BOOL result = [LKDocumentDirectoryArchiver archiveRootObject:list forKey:key];
+        XCTAssertTrue(result, @"Archive with multi layers key");
+    }
+
+    for (NSString* key in keys) {
+        NSDictionary* list = [LKDocumentDirectoryArchiver unarchiveObjectForKey:key];
+        for (int i=0; i < 10; i++) {
+            TestObject* obj = list[key][i];
+            NSString* name = [NSString stringWithFormat:@"NAME-%@-%d", key, i];
+            NSString* mail = [NSString stringWithFormat:@"MAIL-%@-%d", key,i];
+            XCTAssertEqualObjects(obj.name, name, @"");
+            XCTAssertEqualObjects(obj.mail, mail, @"");
+        }
+    }
+    
+    NSString* key2 = @"dirB10/dir20/dir31/file31";
+    BOOL result21 = [LKDocumentDirectoryArchiver archiveExistsForKey:key2];
+    XCTAssertTrue(result21, @"");
+    
+    BOOL result22 = [LKDocumentDirectoryArchiver removeArchiveForKey:key2];
+    XCTAssertTrue(result22, @"");
+    
+    id result23 = [LKDocumentDirectoryArchiver unarchiveObjectForKey:key2];
+    XCTAssertNil(result23, @"");
+    
+    BOOL result24 = [LKDocumentDirectoryArchiver archiveExistsForKey:key2];
+    XCTAssertFalse(result24, @"");
+
+    BOOL result25 = [LKDocumentDirectoryArchiver removeArchiveForKey:key2];
+    XCTAssertTrue(result25, @"");
+
+}
+
+- (void)testArchiveRoot
+{
+    TestObject* obj = TestObject.new;
+    obj.name = [NSString stringWithFormat:@"NAME"];
+    obj.mail = [NSString stringWithFormat:@"MAIL"];
+    BOOL result1 = [LKDocumentDirectoryArchiver archiveRootObject:obj forKey:@"/root"];
+    XCTAssertTrue(result1, @"Archive with root key");
+
+    BOOL result2 = [LKDocumentDirectoryArchiver archiveRootObject:obj forKey:@"/"];
+    XCTAssertFalse(result2, @"Archive with root key");
+}
 
 @end
